@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Page</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(120deg, #f0f4f8, #d9e7f1);
+            color: #333;
+        }
+
+        header {
+            background: #4a90e2;
+            color: #fff;
+            padding: 20px 10%;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        .container {
+            padding: 20px 10%;
+            text-align: center;
+        }
+
+        .card {
+            display: inline-block;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            max-width: 300px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 20px 0 0;
+            padding: 10px 20px;
+            background: #4a90e2;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #357ab7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Modern Web Page</h1>
+        <p>Crafted with HTML & CSS</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Placeholder">
+            <h3>Responsive Design</h3>
+            <p>Learn how to create responsive, engaging web pages with CSS and HTML.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Placeholder">
+            <h3>Modern Styles</h3>
+            <p>Use advanced CSS techniques to create beautiful user interfaces.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Placeholder">
+            <h3>Dynamic Content</h3>
+            <p>Integrate interactive features into your websites for an enhanced experience.</p>
+            <a href="#" class="btn">Explore Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by <a href="#">Partap SIngh v1.1</a> &copy; 2024</p>
+    </footer>
+</body>
+</html>
