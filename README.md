@@ -1,4 +1,3 @@
-
 =====================================================================
 Project 1: -
 ECS Project Overview
@@ -59,7 +58,7 @@ Post-Deployment:
 
 11.Monitor logs and metrics using Amazon CloudWatch.
 Validate the deployment and send notifications on completion.
-=====================================================================================================================================================
+
 # Tools which is being used for this Project
 Tools and Technologies Used
 Languages: PHP
@@ -71,4 +70,3 @@ Storage: S3
 Code Quality: SonarQube
 Artifact Registry: Amazon ECR
 This setup ensures a robust, scalable, and automated deployment pipeline with best practices in DevOps
-============================================================================================================================================================
