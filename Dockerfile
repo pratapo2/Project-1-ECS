@@ -1,8 +1,8 @@
-# Use a pinned version of httpd for stability
-FROM httpd:2.4.57
+# Use a Debian-based image with httpd
+FROM 418295679392.dkr.ecr.ap-south-1.amazonaws.com/project-1-ecs:latest
 
-# Install PHP 8.1 with minimal layers
-RUN apt-get update && apt-get install -y php8.1 && rm -rf /var/lib/apt/lists/*
+# Switch to a Debian/Ubuntu base to support apt operations
+RUN apt-get update -y
 
 # Copy your custom index.html to the container
 COPY index.html /usr/local/apache2/htdocs/index.html
