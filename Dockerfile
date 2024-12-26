@@ -6,4 +6,4 @@ RUN apt-get update -y
 RUN apt install curl -y
 
 # Copy your custom index.html to the container
-COPY index.php /usr/local/apache2/htdocs/index.php
+COPY index.html /usr/local/apache2/htdocs/index.html
