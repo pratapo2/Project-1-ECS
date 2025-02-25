@@ -58,8 +58,6 @@ Post-Deployment:
 
 11.Monitor logs and metrics using Amazon CloudWatch.
 Validate the deployment and send notifications on completion.
-
-# Tools which is being used for this Project it has been changed in main branch changed
 Tools and Technologies Used
 Languages: PHP
 Containerization: Docker
