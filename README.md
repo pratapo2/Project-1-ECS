@@ -57,6 +57,7 @@ Post-Deployment:
 
 
 11.Monitor logs and metrics using Amazon CloudWatch.
+# A line added for UAT
 Validate the deployment and send notifications on completion.
 Tools and Technologies Used
 Languages: PHP
