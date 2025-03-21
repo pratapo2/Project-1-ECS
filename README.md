@@ -69,3 +69,4 @@ Storage: S3
 Code Quality: SonarQube
 Artifact Registry: Amazon ECR
 This setup ensures a robust, scalable, and automated deployment pipeline with best practices in DevOps
+# QA2
