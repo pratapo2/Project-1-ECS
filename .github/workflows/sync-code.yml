@@ -1,0 +1,20 @@
+name: Sync Code to Azure VM
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 * * * *'  # Every hour
+
+jobs:
+  sync:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Copy code to target directory
+        run: |
+          mkdir -p /home/ec2-user/my-python-scripts
+          cp -r . /home/ec2-user/my-python-scripts/
