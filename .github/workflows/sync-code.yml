@@ -1,0 +1,23 @@
+name: Sync Code to Azure VM
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 * * * *'  # Every hour
+
+jobs:
+  sync:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Copy code to target directory using rsync
+        run: |
+          mkdir -p /home/ec2-user/my-python-scripts
+          rsync -av --exclude='.git' ./ /home/ec2-user/my-python-scripts/
+
+      - name: Confirm sync
+        run: echo "Code synced successfully to /home/ec2-user/my-python-scripts"
